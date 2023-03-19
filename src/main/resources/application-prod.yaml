@@ -4,9 +4,6 @@ server:
 spring:
   application:
     name: ead-service-registry
-  output:
-    ansi:
-      enabled: always
 
 ead:
   serviceRegistry:
