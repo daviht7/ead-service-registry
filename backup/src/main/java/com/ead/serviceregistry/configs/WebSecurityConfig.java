@@ -36,13 +36,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser(username)
                 .password(passwordEncoder().encode(password))
                 .roles("ADMIN");
-
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
-
 }
